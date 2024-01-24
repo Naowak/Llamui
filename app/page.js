@@ -28,9 +28,10 @@ export default function Home() {
         <button
           className="bg-slate-700 border border-slate-600 rounded-lg p-4"
           onClick={async () => {
-            console.log(prompt)
-            const res = await axios.post("http://localhost:8000/generate", JSON.stringify({ prompt }))
-            console.log(res.data)
+            //console.log(prompt)
+            //const res = await axios.post("http://localhost:8000/generate", JSON.stringify({ prompt }))
+            //console.log(res.data)
+            setAnswer("This " + prompt + " is a test.");
           }}
         >
           Generate
